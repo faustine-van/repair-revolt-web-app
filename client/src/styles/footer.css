@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Open+Sans:wght@400;700&family=Roboto:wght@400;700&display=swap');
+
+/*!
+ * Bootstrap v5.2.X(https://getbootstrap.com/)
+ * Copyright 2011-2019 The Bootstrap Authors
+ * Copyright 2011-2019 Twitter, Inc.
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+ */
+:root {
+  /**/
+  --background: #fffffe;
+  --card-background: #f2f4f6;
+  --card-background-tag: #fffffe;
+  --headline: #00214d;
+  --card-headline: #00214d;
+  --card-tag-text: #00214d;
+  --paragrapy: #1b2d45;
+  --card-paragrapy: #1b2d45;
+  --card-hightlight: #ff5470;
+  --ff-1: 'Inter', sans-serif;
+  --ff-2: 'Open Sans', sans-serif;
+  --ff-3: 'Times New Roman', Times, serif;
+}
+
+.footer {
+  background-color: var(--card-paragrapy);
+  margin-top: 40px;
+  font-family: var(--ff-3);
+}
+
+.footer .custom-link {
+  color: var(--card-background);
+}
+
+.footer .social-media .custom-link {
+  border: 2px solid white;
+  margin-left: 5px;
+  border-radius: 50%;
+  background: transparent;
+}
+
+.footer .social-media .custom-link:hover {
+  color: var(--headline);
+  padding: 12px;
+}

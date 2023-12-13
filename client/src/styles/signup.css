@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Open+Sans:wght@400;700&family=Roboto:wght@400;700&display=swap');
+
+/*!
+ * Bootstrap v5.2.X(https://getbootstrap.com/)
+ * Copyright 2011-2019 The Bootstrap Authors
+ * Copyright 2011-2019 Twitter, Inc.
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+ */
+:root {
+  /**/
+  --background: #fffffe;
+  --card-background: #f2f4f6;
+  --card-background-tag: #fffffe;
+  --headline: #00214d;
+  --card-headline: #00214d;
+  --card-tag-text: #00214d;
+  --paragrapy: #1b2d45;
+  --card-paragrapy: #1b2d45;
+  --card-hightlight: #ff5470;
+  --ff-1: 'Inter', sans-serif;
+  --ff-2: 'Open Sans', sans-serif;
+  --ff-3: 'Times New Roman', Times, serif;
+}
+
+.signup {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.signup1 {
+  background-color: var(--background);
+  background-image: url('/public/img/auto.jpeg');
+
+}
+
+.signup2 {
+  color: var(--paragrapy);
+  font-family: var(--ff-3);
+  background-color: var(--background);
+  padding: 100px;
+  border-radius: 0 10px 10px 0;
+}
+
+.signup2 span {
+  color: var(--hightlight);
+}
+
+.form-control {
+  margin-bottom: 10px;
+  background-color: var(--card-background);
+}
+
+.form-control:hover {
+  border: 2px solid var(--headline);
+  box-shadow: 0 0 5px 0 rgba(106, 98, 210);
+}
+
+.form-control:focus {
+  border: 2px solid var(--headline);
+  box-shadow: 0 0 5px 0 rgba(106, 98, 210);
+}
+
+.btn-sign {
+  background-color: var(--card-hightlight);
+  color: white;
+  font-weight: bold;
+}
+
+.btn-sign:hover {
+  background-color: var(--card-paragrapy);
+  color: white;
+  font-weight: bold;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.h-custom img {
+  margin-top: -75px;
+}
+
+@media (max-width: 450px) {
+  .h-custom {
+    height: 100%;
+  }
+}

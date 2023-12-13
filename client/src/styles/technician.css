@@ -1,0 +1,387 @@
+:root {
+  --background: #fffffe;
+  --card-background: #f2f4f6;
+  --card-background-tag: #fffffe;
+  --headline: #00214d;
+  --card-headline: #00214d;
+  --card-tag-text: #00214d;
+  --paragrapy: #1b2d45;
+  --card-paragrapy: #1b2d45;
+  --card-hightlight: #ff5470;
+}
+
+.technicianpage {
+  margin: 0;
+  padding: 0;
+  font-family: var(--ff-3);
+  color: var(--paragrapy);
+}
+
+/* sidebar */
+.sidebar {
+  background-color: var(--card-paragrapy);
+  width: 260px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  padding: 20px 10px;
+  z-index: 100;
+  overflow-y: scroll;
+  box-shadow: 0 0 1px var(--grey-color-light);
+  transition: all 0.5s ease;
+}
+
+.section {
+  position: absolute;
+  left: 260px;
+  /* Adjust this value based on the width of the sidebar */
+  top: 0;
+  width: calc(100% - 260px);
+  /* Adjust for the width of the sidebar */
+  height: 100%;
+  padding: 20px;
+  /* Add padding as needed */
+  transition: all 0.5s ease;
+}
+
+.sidebar.close+.section {
+  left: 80px;
+  /* Adjust for the closed sidebar */
+  width: calc(100% - 80px);
+  /* Adjust for the closed sidebar */
+}
+
+.sidebar.close {
+  padding: 60px 0;
+  width: 80px;
+}
+
+.sidebar::-webkit-scrollbar {
+  display: none;
+}
+
+.menu_content {
+  position: relative;
+  color: white;
+}
+
+.menu_title {
+  margin: 15px 0;
+  padding: 0 20px;
+  font-size: 18px;
+}
+
+.sidebar.close .menu_title {
+  padding: 6px 30px;
+}
+
+.menu_title::before {
+  color: var(--grey-color);
+  white-space: nowrap;
+}
+
+.menu_dahsboard::before {
+  content: "Search Technicians";
+}
+
+.menu_editor::before {
+  content: "Profiles";
+}
+
+.menu_setting::before {
+  content: "Other";
+}
+
+.sidebar.close .menu_title::before {
+  content: "";
+  position: absolute;
+  height: 2px;
+  width: 18px;
+  border-radius: 12px;
+  background: var(--grey-color-light);
+}
+
+.menu_items {
+  padding: 0;
+  list-style: none;
+}
+
+.navlink_icon {
+  position: relative;
+  min-width: 50px;
+  line-height: 40px;
+  display: inline-block;
+  text-align: center;
+  border-radius: 6px;
+  color: white;
+}
+
+.navlink_icon::before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: calc(100% + 100px);
+  left: -20px;
+}
+
+.navlink_icon:hover {
+  color: var(--headlines);
+}
+
+.sidebar .nav_link {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 4px 15px;
+  border-radius: 8px;
+  text-decoration: none;
+  color: var(--grey-color);
+  white-space: nowrap;
+}
+
+.sidebar.close .navlink {
+  display: none;
+}
+
+.nav_link:hover {
+  color: var(--headline);
+  background: var(--card-background);
+}
+
+.sidebar.close .nav_link:hover {
+  background: var(--white-color);
+}
+
+.submenu_item {
+  cursor: pointer;
+}
+
+.submenu {
+  display: none;
+}
+
+.submenu_item .arrow-left {
+  position: absolute;
+  right: 10px;
+  display: inline-block;
+  margin-right: auto;
+}
+
+.sidebar.close .submenu {
+  display: none;
+}
+
+.show_submenu~.submenu {
+  display: block;
+}
+
+.show_submenu .arrow-left {
+  transform: rotate(90deg);
+}
+
+.submenu .sublink {
+  padding: 15px 15px 15px 52px;
+}
+
+.bottom_content {
+  position: fixed;
+  bottom: 60px;
+  left: 0;
+  width: 260px;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+
+.bottom {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  left: 0;
+  justify-content: space-around;
+  padding: 18px 0;
+  text-align: center;
+  width: 100%;
+  color: var(--grey-color);
+  border-top: 1px solid var(--grey-color-light);
+  background-color: var(--white-color);
+}
+
+.bottom i {
+  font-size: 20px;
+}
+
+.bottom span {
+  font-size: 18px;
+}
+
+.sidebar.close .bottom_content {
+  width: 50px;
+  left: 15px;
+}
+
+.sidebar.close .bottom span {
+  display: none;
+}
+
+.sidebar.hoverable .collapse_sidebar {
+  display: none;
+}
+
+#sidebarOpen {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  #sidebarOpen {
+    font-size: 25px;
+    display: block;
+    margin-right: 10px;
+    cursor: pointer;
+    color: var(--grey-color);
+  }
+
+  .sidebar.close {
+    left: -100%;
+  }
+
+  .search_bar {
+    display: none;
+  }
+
+  .sidebar.close .bottom_content {
+    left: -100%;
+  }
+}
+
+/*************search****************/
+/*search section*/
+.search-card {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Style for the form container */
+#searchForm {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 20px auto;
+  padding: 10px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.selectName {
+  width: 23%;
+  box-sizing: border-box;
+  margin-bottom: 5px;
+  margin-right: 3px;
+}
+
+.selectLocation {
+  width: 22%;
+  box-sizing: border-box;
+  margin-bottom: 5px;
+  margin-right: 3px;
+}
+
+/* Style for labels */
+#searchForm label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+/* Style for the select element */
+#searchForm select {
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  background: var(--card-background);
+  padding: 8px;
+  width: 100%;
+  transition: border-color 0.3s ease;
+}
+
+#searchForm select:hover {
+  border-color: var(--headline);
+}
+
+#searchForm select option {
+  background: var(--card-background);
+  color: #333;
+  padding: 8px;
+}
+
+#searchForm select option:hover {
+  background: black;
+  color: white;
+}
+
+#searchForm select:focus {
+  border: none;
+  outline: none;
+}
+
+/* Style for the text input */
+.nameSearchFields {
+  width: 45%;
+  box-sizing: border-box;
+  margin-bottom: 5px;
+}
+
+#searchForm input {
+  box-sizing: border-box;
+  padding: 10px;
+  width: 100%;
+  border: none;
+  margin-top: 20px;
+  background: transparent;
+}
+
+#searchForm input:focus {
+  border: none;
+  outline: none;
+}
+
+/* Style for the button */
+.buttonSearch {
+  /*height: 10%;*/
+}
+
+.buttonSearch button {
+  background-color: var(--card-hightlight);
+  box-sizing: border-box;
+  color: #fff;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 10px;
+  width: 100%;
+}
+
+.buttonSearch button:hover {
+  background-color: var(--headline);
+}
+
+.loading-span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.5em;
+  margin-top: 200px;
+  animation: pulse 1.5s infinite alternate, rotate 2s linear infinite;
+  /* Add rotate animation */
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}

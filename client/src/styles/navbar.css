@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Open+Sans:wght@400;700&family=Roboto:wght@400;700&display=swap');
+
+/*!
+ * Bootstrap v5.2.X(https://getbootstrap.com/)
+ * Copyright 2011-2019 The Bootstrap Authors
+ * Copyright 2011-2019 Twitter, Inc.
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+ */
+:root {
+  /**/
+  --background: #fffffe;
+  --card-background: #f2f4f6;
+  --card-background-tag: #fffffe;
+  --headline: #00214d;
+  --card-headline: #00214d;
+  --card-tag-text: #00214d;
+  --paragrapy: #1b2d45;
+  --card-paragrapy: #1b2d45;
+  --card-hightlight: #ff5470;
+  --ff-1: 'Inter', sans-serif;
+  --ff-2: 'Open Sans', sans-serif;
+  --ff-3: 'Times New Roman', Times, serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-size: var(--fp);
+  font-family: var(--ff-2);
+  background-color: var(--card-background);
+}
+
+h1,
+.h1 {
+  font-size: 2.5rem;
+}
+
+h2,
+.h2 {
+  font-size: 2rem;
+  color: var(--headline);
+}
+
+h3,
+.h3 {
+  font-size: 1.75rem;
+}
+
+h4,
+.h4 {
+  font-size: 1.5rem;
+}
+
+h5,
+.h5 {
+  font-size: 1.25rem;
+}
+
+h6,
+.h6 {
+  font-size: 1.15rem;
+}
+
+.lead {
+  font-size: 1.25rem;
+  font-weight: 300;
+}
+
+.display-1 {
+  font-size: 6rem;
+  font-weight: 300;
+  line-height: 1.2;
+}
+
+.display-2 {
+  font-size: 5.5rem;
+  font-weight: 300;
+  line-height: 1.2;
+}
+
+.display-3 {
+  font-size: 4.5rem;
+  font-weight: 300;
+  line-height: 1.2;
+}
+
+.display-4 {
+  font-size: 3.5rem;
+  font-weight: 300;
+  line-height: 1.2;
+}
+
+hr {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  border: 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+small,
+.small {
+  font-size: 80%;
+  font-weight: 400;
+}
+
+mark,
+.mark {
+  padding: 0.2em;
+  background-color: #fcf8e3;
+}
+
+.a {
+  color: var(--headline);
+  text-decoration: underline;
+}
+
+.a1 {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+button {
+  -webkit-transition: all 0.3 ease;
+  transition: all 0.4s ease-in-out;
+  cursor: pointer;
+}
+
+/*-----start-----*/
+.wrap {
+  background-color: var(--card-paragrapy);
+}
+
+.custom-link {
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+  text-decoration: none;
+}
+
+.custom-link:hover {
+  color: var(--card-background);
+}
+
+.ftco-section .navbar {
+  background-color: var(--background);
+  box-shadow: 2px;
+}
+
+.navbar .nav-link {
+  color: var(--paragraph);
+  font-family: var(--ff-3);
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.navbar .nav-link:hover {
+  color: var(--card-hightlight);
+  border-bottom: 2px solid var(--card-headline);
+}
+
+.navbar img {
+  height: 50px;
+  width: 240px;
+}
+
+.btns {
+  display: block;
+}
+
+.btn2 {
+  border: 2px solid var(--card-headline);
+  font-weight: 700;
+  color: var(--paragrapy);
+  box-shadow: 10px;
+  cursor: pointer;
+  letter-spacing: 0.5px;
+  padding: 0.3em 2.0em;
+  position: relative;
+  text-transform: lowercase;
+  margin-left: 10px;
+  font-family: var(--ff-3);
+}
+
+.btn2:hover {
+  background-color: var(--card-hightlight);
+  color: white;
+  font-weight: bold;
+}
+
+.btn1 {
+  font-family: var(--ff-3);
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.btn1:hover {
+  color: var(--card-hightlight);
+  font-weight: 700;
+}
+
+@media (max-width: 600px) {
+  .btns {
+    display: none;
+  }
+}

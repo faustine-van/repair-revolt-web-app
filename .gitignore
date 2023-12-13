@@ -1,0 +1,18 @@
+ Ignore compiled Python files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Ignore database files
+*.db
+
+# Ignore node_modules folder
+node_modules/
+
+# Ignore compiled JavaScript files
+/client/build/
+/client/dist/
+
+# Ignore environment files
+.env

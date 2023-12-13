@@ -1,0 +1,28 @@
+Create a new location
+
+---
+tags:
+  - Location
+
+responses:
+  '200':
+     description: Successful response with created location.
+     schema:
+         type: array
+         items:
+           properties:
+             id:
+               type: string
+               description: The unique identifier for the location.
+             country:
+               type: string
+               description: The country of the location.
+             city:
+               type: string
+               description: The city of the location.
+             sector:
+               type: string
+               description: The sector of the location.
+             cell:
+               type: string
+               description: The cell of the location.

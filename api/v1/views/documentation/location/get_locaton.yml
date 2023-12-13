@@ -1,0 +1,33 @@
+Get information about a specific location
+
+---
+tags:
+  - Location
+parameters:
+  - name: location_id
+    in: path
+    type: string
+    required: true
+    description: The id of the technician to retrieve
+responses:
+  '200':
+     description: Successful response with a list of locations.
+     schema:
+         type: array
+         items:
+           properties:
+             id:
+               type: string
+               description: The unique identifier for the location.
+             country:
+               type: string
+               description: The country of the location.
+             city:
+               type: string
+               description: The city of the location.
+             sector:
+               type: string
+               description: The sector of the location.
+             cell:
+               type: string
+               description: The cell of the location.

@@ -1,3 +1,4 @@
+![mediamodifier_image (1)](https://github.com/faustine-van/repair-revolt-web-app/assets/125466059/1337a3a4-f3e5-42c0-9f96-03e319322d71)
 # Repair Revolt Hub
 
 Repair Revolt Hub is a web application designed to connect vehicle owners with nearby technicians in their local area.
@@ -26,9 +27,11 @@ On that particular day, faced with a sudden vehicle issue in an area less freque
 
 ### User Authentication for Technicians
 This feature involves creating a secure system for technicians to authenticate themselves on your platform. Technicians might need to create an account, log in, and manage their profiles. Authentication ensures that only authorized users (technicians, in this case) can access certain features or data.
+![mediamodifier_image](https://github.com/faustine-van/repair-revolt-web-app/assets/125466059/a8538804-a24f-4e06-a40b-6d89055494f5)
 
 ### Search functionality
 This feature involves creating a secure system for technicians to authenticate themselves on your platform. Technicians might need to create an account, log in, and manage their profiles. Authentication ensures that only authorized users (technicians, in this case) can access certain features or data.
+![techncians profiles](https://github.com/faustine-van/repair-revolt-web-app/assets/125466059/99196645-3c5a-41b6-b60b-0149e3dc35d5)
 
 ### Technician profile creation
 Technicians should have the ability to create and manage their profiles on the platform. This includes providing details such as their full name, bio, contact information, service offerings, and possibly even uploading a profile picture. A well-crafted profile helps end-users understand the technician's expertise and services.

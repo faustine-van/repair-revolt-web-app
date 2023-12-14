@@ -1,5 +1,3 @@
-![mediamodifier_image (1)](https://github.com/faustine-van/repair-revolt-web-app/assets/125466059/1337a3a4-f3e5-42c0-9f96-03e319322d71)
-
 # Repair Revolt Hub
 
 Repair Revolt Hub is a web application designed to connect vehicle owners with nearby technicians in their local area.
@@ -30,6 +28,7 @@ On that particular day, faced with a sudden vehicle issue in an area less freque
 
 ### User Authentication for Technicians
 This feature involves creating a secure system for technicians to authenticate themselves on your platform. Technicians might need to create an account, log in, and manage their profiles. Authentication ensures that only authorized users (technicians, in this case) can access certain features or data.
+![login mockup](https://github.com/faustine-van/repair-revolt-web-app/assets/125466059/f4ef13f0-0bf6-4c70-b27c-f8aa464cf86e)
 
 
 ### Search functionality
